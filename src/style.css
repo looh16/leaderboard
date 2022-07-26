@@ -1,0 +1,59 @@
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.refreshBtn {
+  width: fit-content;
+  margin: 1rem;
+}
+
+.divTable {
+  display: flex;
+  flex-direction: column;
+}
+
+.divForm {
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  border: inset 2px black;
+  width: fit-content;
+  align-self: center;
+}
+
+table tr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+table td {
+  table-layout: fixed;
+  width: 30vw;
+  height: 20px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+table#tableId tr:nth-child(even) {
+  background-color: rgb(139, 140, 141);
+  color: #fff;
+}
+
+table#tableId tr:nth-child(odd) {
+  background-color: #eee;
+}
