@@ -1,0 +1,86 @@
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.refreshBtn {
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.divTable {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tableTitle {
+  margin-bottom: 1.5rem;
+}
+
+.divForm {
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  border: inset 2px black;
+  width: fit-content;
+  align-self: center;
+}
+
+table tr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+table td {
+  table-layout: fixed;
+  width: 30vw;
+  height: 20px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+table#tableId tr:nth-child(even) {
+  background-color: rgb(139, 140, 141);
+  color: #fff;
+}
+
+table#tableId tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+input {
+  margin: 0.5rem;
+}
+
+.btnSubmit {
+  width: fit-content;
+  align-self: flex-end;
+}
