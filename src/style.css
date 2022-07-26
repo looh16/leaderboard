@@ -1,25 +1,43 @@
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+header {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
   justify-content: center;
+  margin-top: 5rem;
 }
 
 .refreshBtn {
   width: fit-content;
-  margin: 1rem;
+  margin-bottom: 1rem;
 }
 
 .divTable {
   display: flex;
   flex-direction: column;
+  margin-right: 5rem;
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tableTitle {
+  margin-bottom: 1.5rem;
 }
 
 .divForm {
   margin-left: 2rem;
-  margin-top: 3rem;
+  margin-top: 0.7rem;
 }
 
 form {
@@ -56,4 +74,13 @@ table#tableId tr:nth-child(even) {
 
 table#tableId tr:nth-child(odd) {
   background-color: #eee;
+}
+
+input {
+  margin: 0.5rem;
+}
+
+.btnSubmit {
+  width: fit-content;
+  align-self: flex-end;
 }
