@@ -1,43 +1,5 @@
 // eslint-disable-next-line
 export const htmlPage = () => {
-  const scores = [
-
-    {
-      id: 1,
-      name: 'name',
-      score: 100,
-    },
-    {
-      id: 2,
-      name: 'name',
-      score: 100,
-    },
-    {
-      id: 3,
-      name: 'name',
-      score: 100,
-    },
-    {
-      id: 4,
-      name: 'name',
-      score: 100,
-    },
-    {
-      id: 5,
-      name: 'name',
-      score: 100,
-    },
-    {
-      id: 6,
-      name: 'name',
-      score: 100,
-    },
-    {
-      id: 7,
-      name: 'name',
-      score: 100,
-    },
-  ];
 
   // set page title
   document.title = 'Leaderboard';
@@ -85,12 +47,13 @@ export const htmlPage = () => {
   divFormTitle.appendChild(divFormText);
 
   const form = document.createElement('form');
-  form.setAttribute('method', 'post');
-  form.setAttribute('action', '');
+  form.setAttribute('id','formId');
+ // form.setAttribute('method', 'post');
+  //form.setAttribute('action', '');
 
   const nameInput = document.createElement('input');
   nameInput.setAttribute('type', 'text');
-  nameInput.setAttribute('name', 'FullName');
+  nameInput.setAttribute('name', 'name');
   nameInput.setAttribute('placeholder', 'Your Name');
 
   const scoreInput = document.createElement('input');
@@ -117,14 +80,6 @@ export const htmlPage = () => {
   table.setAttribute('id', 'tableId');
 
   const tableBody = document.createElement('tbody');
-
-  scores.forEach((score) => {
-    const row = document.createElement('tr');
-    const td = document.createElement('td');
-    td.appendChild(document.createTextNode(`${score.name} : ${score.score}`));
-    row.appendChild(td);
-    tableBody.appendChild(row);
-  });
 
   table.appendChild(tableBody);
   divTable.appendChild(table);
