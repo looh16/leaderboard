@@ -47,9 +47,9 @@ export const htmlPage = () => {
   divFormTitle.appendChild(divFormText);
 
   const form = document.createElement('form');
-  form.setAttribute('id','formId');
- // form.setAttribute('method', 'post');
-  //form.setAttribute('action', '');
+  form.setAttribute('id', 'formId');
+  // form.setAttribute('method', 'post');
+  // form.setAttribute('action', '');
 
   const nameInput = document.createElement('input');
   nameInput.setAttribute('type', 'text');
