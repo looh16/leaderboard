@@ -18,6 +18,8 @@ header {
 .refreshBtn {
   width: fit-content;
   margin-bottom: 1rem;
+  border: 2px solid black;
+  box-shadow: 3px 2px black;
 }
 
 .divTable {
@@ -29,6 +31,7 @@ header {
 .tableHeader {
   display: flex;
   justify-content: space-between;
+  width: 31.5vw;
 }
 
 .tableTitle {
@@ -68,7 +71,7 @@ table td {
 }
 
 table#tableId tr:nth-child(even) {
-  background-color: rgb(139, 140, 141);
+  background-color: rgb(148, 197, 246);
   color: #fff;
 }
 
@@ -83,4 +86,6 @@ input {
 .btnSubmit {
   width: fit-content;
   align-self: flex-end;
+  border: 2px solid black;
+  box-shadow: 3px 2px rgb(0, 0, 0);
 }
